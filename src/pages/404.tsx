@@ -4,17 +4,23 @@ import tw, { styled } from 'twin.macro';
 import Head from '@/components/layouts/Head';
 import Layout from '@/components/layouts/Layout';
 
-const Home = () => {
+const NotFound = () => {
   return (
     <Layout>
-      <Head></Head>
-      <Container>Home</Container>
+      <Head title="Page Not Found"></Head>
+      <Container>
+        <Text>404</Text>
+        <Text>Page Not Found</Text>
+      </Container>
     </Layout>
   );
 };
 
-export default Home;
+export default NotFound;
 
 const Container = styled.div`
+  ${tw``};
+`;
+const Text = styled.p`
   ${tw``};
 `;
